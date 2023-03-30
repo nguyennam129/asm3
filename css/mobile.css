@@ -1,0 +1,266 @@
+
+* {
+    margin: 0px;
+}
+
+
+body {
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+/* section > .container{ */
+    /* width: 1170px; */
+    /* margin: auto; */
+    /* display: block; */
+
+    /* padding: 30px 50px; */
+/* } */
+
+
+#banner
+{
+	position: relative;
+}
+.bottom-left {
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.imageChange {
+	height: 60vh;
+}
+/* Xây dựng Navbar */
+
+.nav-ba
+{
+	display:flex;
+	justify-content: center;
+	border-bottom: 1px solid #f1f1f1;
+}
+.nav-ba a {
+	color: #444444;
+	font-size: 17px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.nav{
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	width: 250px;
+	padding: 20px;
+}
+.nav-1{
+	width: 100px;
+}
+.nav-1 a{
+	padding-left: 25px;
+}
+.nav-ba i {
+	color:#50AFF2;
+	padding-left: 60px;
+}
+.nav-ba a:hover {
+	background-color: #555;
+	color: white;
+}
+.imageChange1{
+	position: absolute;
+	border: 1px solid #e9ecef;
+	border-radius:50%;
+	transform: scale(4);
+	width: 50px;
+}
+/* 3. Xây dựng Thông tin cá nhân*/
+
+.section1 {
+	padding: 100px;
+}
+
+.Baby{
+	padding-bottom: 10px;
+}
+
+#colorc
+{
+	color:#50AFF2;
+}
+
+.container-job {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 50px 120px 50px 50px;
+	gap: 50px 200px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 30px;
+	font-size: 17px;
+	width: 400px;
+
+}
+
+.grid-item-box{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	font-size: 17px;
+	height: 70px;
+}
+.grid-item-box i {
+	font-size: 30px;
+	text-align: center;
+}
+
+.grid-item-box-2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 35px;
+	text-align: center;
+}
+.grid-item-box-2 i {
+	color: green;
+	font-size: 24px;
+	border: 1px solid green;
+	border-radius: 50%;
+	display: flex;
+	padding: 13px;
+}
+/* ngôn ngữ */
+.Spanx {
+	background: #199cdb;
+	display: inline-block;
+	height: 2px;
+	margin-right: 10px;
+	width: 45px;
+	padding: 1px;
+}
+.Spanx1 {
+	background: grey;
+	display: inline-block;
+	height: 2px;
+	margin-right: 10px;
+	width: 45px;
+	padding: 1px;
+}
+.NgonNgu {
+
+	padding-top: 13px;
+}
+
+/* chứng chỉ giải thưởng */
+
+.container-4hang2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 40px;
+}
+.list-item-1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-right: 1px solid #d6c08d;
+	border-bottom: 1px solid #d6c08d;
+	padding: 20px;
+}
+
+/* phần dự án */
+
+.TaoItem {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 50px;
+	padding: 0px 100px;
+}
+.TaoItem img {
+	width: 100%;
+}
+.ListItem2a {
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	width: 400px
+	
+}
+.canchinh {
+	padding: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+.canchinh span {
+	padding: 10px;
+	margin: 10px;
+	background: #199cdb;
+	border-radius: 40%;
+} 
+table td{  
+    border-collapse: collapse;  
+	border-top: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 14px; 
+}  
+.THBB{
+	width: 30%;
+}
+/* phần liên hệ */
+
+.container-footer {
+	height: 200px;
+}
+.container-footer ul{
+	list-style-type: none;
+	text-align: center;
+	background: #F7F0F0;
+}
+.container-footer ul li{
+	display: inline-table;
+	width: 200px;
+	height: 100px;
+	line-height:100px;
+}
+.container-footer ul li a{
+	color: black;
+	text-decoration:none;
+	font-size: 23px;
+}
+.container-footer ul li i{
+	font-size: 31px;
+	color: #199cdb;
+}
+
+
+@media screen and (max-width: 579px) {
+	.nav{
+		border-style: none;
+	}
+	.nav-ba{
+		flex-direction: column;
+		padding-left:50px
+	}
+	.row {
+		grid-template-columns: auto;
+	}
+	.container-job {
+		grid-template-columns: auto;
+	}
+	/* chứng chỉ */
+	.container-4hang2 {
+		grid-template-columns: 1fr;
+	}
+	/* dự án */
+	.TaoItem {
+		grid-template-columns: 1fr;
+	}
+	.ListItem2a {
+		margin-left:30px;
+	}
+	.List-Item-2 {
+		width: 450px;
+		height: 620px;	
+	}
+	.container-footer ul li{
+		display: block;
+	}
+}
